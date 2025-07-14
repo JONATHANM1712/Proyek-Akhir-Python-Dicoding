@@ -15,7 +15,7 @@ filtered = data.sort_values(by="total_orders", ascending=False).head(top_n)
 
 # Plot bar chart
 fig, ax = plt.subplots(figsize=(12, 7))
-ax.bar(filtered["customer_city"], filtered["total_orders"], color="yellow-orange-red")
+ax.bar(filtered["customer_city"], filtered["total_orders"], color="black")
 ax.set_title("Jumlah Pesanan Terbanyak")
 ax.set_xlabel("Kota")
 ax.set_ylabel("Jumlah Pesanan")
