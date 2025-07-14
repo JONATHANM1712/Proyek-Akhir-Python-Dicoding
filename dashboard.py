@@ -8,7 +8,7 @@ st.subheader("Kota Yang Pesanan Jumlah Banyak")
 
 data = pd.read_csv("main_data.csv")
 
-top_n = st.slider("Tampilkan Kota Meriah"), min_value=7, max_value=len(data), value=12)
+top_n = st.slider("Tampilkan Kota Meriah"), min_value=5, max_value=len(data), value=10)
 
 filtered = data.sort_values(by="total_orders", ascending=False).
 
