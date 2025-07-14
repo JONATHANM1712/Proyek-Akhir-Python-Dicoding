@@ -8,7 +8,7 @@ st.subheader("Kota dengan Jumlah Pesanan Terbanyak")
 
 data = pd.read_csv("main_data.csv")
 
-top_n = st.slider("Tampilkan Top Kota", min_value=7, max_value=len(data), value=12)
+top_n = st.slider("Kota Yang Paling Bagus", min_value=7, max_value=len(data), value=12)
 
 # Filter data
 filtered = data.sort_values(by="total_orders", ascending=False).head(top_n)
