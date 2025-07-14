@@ -1,5 +1,5 @@
-import pandas as pandas
-import streamlit as streamlit
+import pandas as pd
+import streamlit as st
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title = "Dashboard Commerical Venue", layout="left")
@@ -10,7 +10,7 @@ data = pd.read_csv("main_data.csv")
 
 top_n = st.slider("Tampilkan Kota Meriah"), min_value=5, max_value=len(data), value=10)
 
-filtered = data.sort_values(by="total_orders", ascending=False).
+filtered = data.sort_values(by="total_orders", ascending=False).head(top_n)
 
 fig, ax = plt.subplots(figsize=(12,7))
 ax.bar(filtered["customer_city"], filtered["total_orders"], color="yellow"
