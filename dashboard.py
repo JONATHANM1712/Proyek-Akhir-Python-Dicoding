@@ -15,11 +15,11 @@ filtered = data.sort_values(by="total_orders", ascending=False).head(top_n)
 
 # Plot bar chart
 fig, ax = plt.subplots(figsize=(12, 7))
-ax.bar(filtered["customer_city"], filtered["total_orders"], color="black")
+ax.bar(filtered["customer_city"], filtered["total_orders"], color="blue")
 ax.set_title("Jumlah Pesanan Terbanyak")
 ax.set_xlabel("Kota")
 ax.set_ylabel("Jumlah Pesanan")
-plt.xticks(rotation=45)
+plt.xticks(rotation=60)
 st.pyplot(fig)
 
 # Ekspander: tampilkan data mentah
