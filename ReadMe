@@ -1,0 +1,73 @@
+# Proyek Analisis Data: E-Commerce, Air Quality, dan Bike Sharing
+
+## 📌 Deskripsi Proyek
+Proyek ini merupakan bagian dari kelas Dicoding "Belajar Analisis Data dengan Python". Kami menganalisis tiga dataset berbeda:
+
+1. **E-Commerce Dataset (Olist)** – Analisis kota dan kategori produk.
+2. **Air Quality Dataset** – Analisis tren polusi udara tahunan (PM2.5) di Beijing.
+3. **Bike Sharing Dataset** – Analisis tren peminjaman sepeda berdasarkan musim dan waktu.
+
+Hasil analisis kemudian disajikan dalam bentuk dashboard interaktif menggunakan **Streamlit**.
+
+---
+
+## 🧪 Cara Menjalankan Notebook
+
+1. Buka file notebook.ipynb di Jupyter Notebook atau Google Colab.
+2. Jalankan semua cell untuk melihat analisis data, visualisasi, dan insight bisnis.
+
+---
+
+## 🖥️ Cara Menjalankan Dashboard (Streamlit)
+
+1. Masuk ke folder dashboard/
+2. Jalankan perintah berikut di terminal:
+
+bash
+streamlit run dashboard.py
+
+
+3. Dashboard akan berjalan di browser lokal Anda (biasanya di http://localhost:8501)
+
+---
+
+## 📁 Struktur Direktori
+
+submission
+├───dashboard
+│   ├───main_data.csv            # Dataset untuk dashboard
+│   └───dashboard.py             # Kode Streamlit
+├───data
+│   ├───data_1.csv               # Dataset PM2.5 (Air Quality)
+│   └───data_2.csv               # Dataset peminjaman sepeda
+├───notebook.ipynb              # Notebook analisis data utama
+├───README.md                   # Petunjuk penggunaan
+├───requirements.txt            # Daftar library Python
+└───url.txt                     # Link ke demo dashboard (jika ada)
+
+
+---
+
+## 📈 Insight yang Diperoleh
+
+- Kota **São Paulo** mendominasi jumlah pesanan dan nilai transaksi pada e-commerce.
+- Polusi udara PM2.5 di stasiun **Dongsi** menunjukkan penurunan bertahap dari tahun 2013–2017.
+- Peminjaman sepeda tertinggi terjadi saat **musim panas** dan **hari kerja jam sibuk**.
+
+---
+
+## 📦 Teknologi dan Library
+- Python 3
+- Pandas, Numpy
+- Matplotlib, Seaborn
+- Streamlit
+
+---
+
+## ✍️ Catatan Tambahan
+- Jika ingin mengakses versi online dashboard, silakan buka tautan yang tersedia di url.txt (jika ada).
+- Semua visualisasi dalam dashboard sudah mengikuti prinsip desain yang baik dan informatif.
+
+---
+
+Selamat mengeksplorasi!
